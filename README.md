@@ -2,7 +2,8 @@
 
 Sass framework Pure.CSS based and ready to use in Ruby projects.
 
-> TODO: to write the instructions for use.
+[Instructions for Use](https://github.com/MakeplanSAS/makepure-sass/wiki)
+> *TODO: finish to write the instructions for use.*
 
 ## Installation
 

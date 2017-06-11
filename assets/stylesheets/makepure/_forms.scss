@@ -1,0 +1,286 @@
+.make-form {
+  input {
+    &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"] {
+      padding: 0.5em 0.6em;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-shadow: inset 0 1px 3px #ddd;
+      border-radius: 4px;
+      vertical-align: middle;
+      box-sizing: border-box;
+    }
+  }
+  select, textarea {
+    padding: 0.5em 0.6em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    vertical-align: middle;
+    box-sizing: border-box;
+  }
+  input {
+    &:not([type]) {
+      padding: 0.5em 0.6em;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-shadow: inset 0 1px 3px #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    &[type="color"] {
+      padding: 0.2em 0.5em;
+    }
+    &[type="text"]:focus, &[type="password"]:focus, &[type="email"]:focus, &[type="url"]:focus, &[type="date"]:focus, &[type="month"]:focus, &[type="time"]:focus, &[type="datetime"]:focus, &[type="datetime-local"]:focus, &[type="week"]:focus, &[type="number"]:focus, &[type="search"]:focus, &[type="tel"]:focus, &[type="color"]:focus {
+      outline: 0;
+      border-color: #129FEA;
+    }
+  }
+  select:focus, textarea:focus {
+    outline: 0;
+    border-color: #129FEA;
+  }
+  input {
+    &:not([type]):focus {
+      outline: 0;
+      border-color: #129FEA;
+    }
+    &[type="file"]:focus, &[type="radio"]:focus, &[type="checkbox"]:focus {
+      outline: thin solid #129FEA;
+      outline: 1px auto #129FEA;
+    }
+  }
+  .make-checkbox, .make-radio {
+    margin: 0.5em 0;
+    display: block;
+  }
+  input {
+    &[type="text"][disabled], &[type="password"][disabled], &[type="email"][disabled], &[type="url"][disabled], &[type="date"][disabled], &[type="month"][disabled], &[type="time"][disabled], &[type="datetime"][disabled], &[type="datetime-local"][disabled], &[type="week"][disabled], &[type="number"][disabled], &[type="search"][disabled], &[type="tel"][disabled], &[type="color"][disabled] {
+      cursor: not-allowed;
+      background-color: #eaeded;
+      color: #cad2d3;
+    }
+  }
+  select[disabled], textarea[disabled] {
+    cursor: not-allowed;
+    background-color: #eaeded;
+    color: #cad2d3;
+  }
+  input {
+    &:not([type])[disabled] {
+      cursor: not-allowed;
+      background-color: #eaeded;
+      color: #cad2d3;
+    }
+    &[readonly] {
+      background-color: #eee;
+      color: #777;
+      border-color: #ccc;
+    }
+  }
+  select[readonly], textarea[readonly] {
+    background-color: #eee;
+    color: #777;
+    border-color: #ccc;
+  }
+  input:focus:invalid, textarea:focus:invalid, select:focus:invalid {
+    color: #b94a48;
+    border-color: #e9322d;
+  }
+  input {
+    &[type="file"]:focus:invalid:focus, &[type="radio"]:focus:invalid:focus, &[type="checkbox"]:focus:invalid:focus {
+      outline-color: #e9322d;
+    }
+  }
+  select {
+    height: 2.25em;
+    border: 1px solid #ccc;
+    background-color: white;
+    &[multiple] {
+      height: auto;
+    }
+  }
+  label {
+    margin: 0.5em 0 0.2em;
+  }
+  fieldset {
+    margin: 0;
+    padding: 0.35em 0 0.75em;
+    border: 0;
+  }
+  legend {
+    display: block;
+    width: 100%;
+    padding: 0.3em 0;
+    margin-bottom: 0.3em;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.make-form-stacked {
+  input {
+    &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"], &[type="file"] {
+      display: block;
+      margin: 0.25em 0;
+    }
+  }
+  select, label, textarea, input:not([type]) {
+    display: block;
+    margin: 0.25em 0;
+  }
+}
+
+.make-form-aligned {
+  input, textarea, select, .make-help-inline {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+  }
+}
+
+.make-form-message-inline {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+.make-form-aligned {
+  textarea {
+    vertical-align: top;
+  }
+  .make-control-group {
+    margin-bottom: 0.5em;
+    label {
+      text-align: right;
+      display: inline-block;
+      vertical-align: middle;
+      width: 10em;
+      margin: 0 1em 0 0;
+    }
+  }
+  .make-controls {
+    margin: 1.5em 0 0 11em;
+  }
+}
+
+.make-form {
+  input.make-input-rounded, .make-input-rounded {
+    border-radius: 2em;
+    padding: 0.5em 1em;
+  }
+  .make-group {
+    fieldset {
+      margin-bottom: 10px;
+    }
+    input, textarea {
+      display: block;
+      padding: 10px;
+      margin: 0 0 -1px;
+      border-radius: 0;
+      position: relative;
+      top: -1px;
+    }
+    input:focus, textarea:focus {
+      z-index: 3;
+    }
+    input:first-child, textarea:first-child {
+      top: 1px;
+      border-radius: 4px 4px 0 0;
+      margin: 0;
+    }
+    input:first-child:last-child, textarea:first-child:last-child {
+      top: 1px;
+      border-radius: 4px;
+      margin: 0;
+    }
+    input:last-child, textarea:last-child {
+      top: -2px;
+      border-radius: 0 0 4px 4px;
+      margin: 0;
+    }
+    button {
+      margin: 0.35em 0;
+    }
+  }
+  .make-input-1 {
+    width: 100%;
+  }
+  .make-input-3-4 {
+    width: 75%;
+  }
+  .make-input-2-3 {
+    width: 66%;
+  }
+  .make-input-1-2 {
+    width: 50%;
+  }
+  .make-input-1-3 {
+    width: 33%;
+  }
+  .make-input-1-4 {
+    width: 25%;
+  }
+  .make-help-inline {
+    display: inline-block;
+    padding-left: 0.3em;
+    color: #666;
+    vertical-align: middle;
+    font-size: 0.875em;
+  }
+}
+
+.make-form-message-inline {
+  display: inline-block;
+  padding-left: 0.3em;
+  color: #666;
+  vertical-align: middle;
+  font-size: 0.875em;
+}
+
+.make-form-message {
+  display: block;
+  color: #666;
+  font-size: 0.875em;
+}
+
+@media only screen and (max-width: 480px) {
+  .make-form {
+    button[type="submit"] {
+      margin: 0.7em 0 0;
+    }
+    input {
+      &:not([type]), &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"] {
+        margin-bottom: 0.3em;
+        display: block;
+      }
+    }
+    label {
+      margin-bottom: 0.3em;
+      display: block;
+    }
+  }
+  .make-group input {
+    &:not([type]), &[type="text"], &[type="password"], &[type="email"], &[type="url"], &[type="date"], &[type="month"], &[type="time"], &[type="datetime"], &[type="datetime-local"], &[type="week"], &[type="number"], &[type="search"], &[type="tel"], &[type="color"] {
+      margin-bottom: 0;
+    }
+  }
+  .make-form-aligned {
+    .make-control-group label {
+      margin-bottom: 0.3em;
+      text-align: left;
+      display: block;
+      width: 100%;
+    }
+    .make-controls {
+      margin: 1.5em 0 0 0;
+    }
+  }
+  .make-form .make-help-inline, .make-form-message-inline, .make-form-message {
+    display: block;
+    font-size: 0.75em;
+    padding: 0.2em 0 0.8em;
+  }
+}

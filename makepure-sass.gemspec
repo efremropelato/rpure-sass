@@ -4,15 +4,15 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'makepure/sass/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "makepure-sass"
+  spec.name          = 'makepure-sass'
   spec.version       = Makepure::Sass::VERSION
-  spec.authors       = ["Efrem Ropelato"]
-  spec.email         = ["efrem.ropelato@gmail.com"]
+  spec.authors       = ['Efrem Ropelato']
+  spec.email         = ['efrem.ropelato@gmail.com']
 
   spec.summary       = 'Sass framework Pure.CSS based and ready to use in Ruby projects'
   spec.description   = 'Sass framework Pure.CSS based and ready to use in Ruby projects'
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
-  spec.license       = "MIT"
+  spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = 'exe'

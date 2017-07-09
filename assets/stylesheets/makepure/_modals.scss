@@ -1,8 +1,8 @@
-.modal-open {
+.makemodal-open {
   overflow: hidden;
 }
 
-.modal {
+.makemodal {
   display: none;
   overflow: hidden;
   position: fixed;
@@ -13,7 +13,7 @@
   z-index: 1050;
   -webkit-overflow-scrolling: touch;
   outline: 0;
-  &.fade .modal-dialog {
+  &.fade .makemodal-dialog {
     -webkit-transform: translate(0, -25%);
     -ms-transform: translate(0, -25%);
     -o-transform: translate(0, -25%);
@@ -23,7 +23,7 @@
     -o-transition: -o-transform 0.3s ease-out;
     transition: transform 0.3s ease-out;
   }
-  &.in .modal-dialog {
+  &.in .makemodal-dialog {
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     -o-transform: translate(0, 0);
@@ -31,18 +31,18 @@
   }
 }
 
-.modal-open .modal {
+.makemodal-open .makemodal {
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-.modal-dialog {
+.makemodal-dialog {
   position: relative;
   width: auto;
   margin: 10px;
 }
 
-.modal-content {
+.makemodal-content {
   position: relative;
   background-color: white;
   border: 1px solid transparent;
@@ -55,7 +55,7 @@
   outline: 0;
 }
 
-.modal-backdrop {
+.makemodal-backdrop {
   position: fixed;
   top: 0;
   right: 0;
@@ -75,7 +75,7 @@
   }
 }
 
-.modal-header {
+.makemodal-header {
   padding: 15px;
   border-bottom: 1px solid white;
   &:before,
@@ -88,21 +88,21 @@
   }
 }
 
-.modal-header .close {
+.makemodal-header .close {
   margin-top: -2px;
 }
 
-.modal-title {
+.makemodal-title {
   margin: 0;
   line-height: 1.428571429;
 }
 
-.modal-body {
+.makemodal-body {
   position: relative;
   padding: 20px;
 }
 
-.modal-footer {
+.makemodal-footer {
   padding: 20px;
   text-align: right;
   border-top: 1px solid white;
@@ -127,7 +127,7 @@
   }
 }
 
-.modal-scrollbar-measure {
+.makemodal-scrollbar-measure {
   position: absolute;
   top: -9999px;
   width: 50px;
@@ -136,29 +136,29 @@
 }
 
 @media (min-width: 768px) {
-  .modal-dialog {
+  .makemodal-dialog {
     width: 600px;
     margin: 30px auto;
   }
-  .modal-content {
+  .makemodal-content {
     -webkit-box-shadow: (0 5px 15px rgba(0, 0, 0, .5));
     box-shadow: (0 5px 15px rgba(0, 0, 0, .5));
   }
-  .modal-sm {
+  .makemodal-sm {
     width: 300px;
   }
 }
 
 @media (min-width: 992px) {
-  .modal-lg {
+  .makemodal-lg {
     width: 900px;
   }
 }
 
-.modal .modal-wide .modal-dialog {
+.makemodal .makemodal-wide .makemodal-dialog {
   width: 70%;
 }
 
-.modal-wide .modal-body {
+.makemodal-wide .makemodal-body {
   overflow-y: auto;
 }

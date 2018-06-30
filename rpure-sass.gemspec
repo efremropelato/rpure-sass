@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Sass framework Pure.CSS based and ready to use in Ruby projects'
   spec.description   = 'Sass framework Pure.CSS based and ready to use in Ruby projects'
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://efremropelato.github.io/rpure-sass/"
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }

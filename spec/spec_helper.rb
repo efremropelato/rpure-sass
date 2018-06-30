@@ -14,4 +14,4 @@ RSpec.configure do |config|
   config.after(:suite) do
     FileUtils.rm_rf('tmp', secure: true)
   end
-end 
+end

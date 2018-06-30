@@ -2,8 +2,8 @@ require 'spec_helper'
 
 RSpec.describe 'Sass compilation' do
   it 'compiles scss to css' do
-    path = 'assets/stylesheets'
-    file = 'rpure'
+    path = 'vendor/assets/stylesheets'
+    file = '_rpure'
     sass_engine = Sass::Engine.for_file(
                     "#{path}/#{file}.scss",
                     cache_location: 'tmp/.sass-cache',
@@ -11,7 +11,7 @@ RSpec.describe 'Sass compilation' do
                     syntax:         :scss
                   )
     expect {
-      File.open("#{file}.css", 'w') { |f| f.write(sass_engine.render) }
+      File.open("tmp/#{file}.css", 'w') { |f| f.write(sass_engine.render) }
     }.not_to raise_error
   end
 end

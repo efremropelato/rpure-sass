@@ -1,6 +1,6 @@
 +function ($) {
     'use strict';
-    var MakeModal = function (element, options) {
+    var RpureModal = function (element, options) {
         this.options = options;
         this.$body = $(document.body);
         this.$element = $(element);
@@ -10,26 +10,26 @@
 
         if (this.options.remote) {
             this.$element
-                .find('.makemodal-content')
+                .find('.rpuremodal-content')
                 .load(this.options.remote, $.proxy(function () {
-                    this.$element.trigger('loaded.bs.makemodal')
+                    this.$element.trigger('loaded.bs.rpuremodal')
                 }, this))
         }
     };
 
-    MakeModal.DEFAULTS = {
+    RpureModal.DEFAULTS = {
         backdrop: true,
         keyboard: true,
         show: true
     };
 
-    MakeModal.prototype.toggle = function (_relatedTarget) {
+    RpureModal.prototype.toggle = function (_relatedTarget) {
         return this.isShown ? this.hide() : this.show(_relatedTarget)
     };
 
-    MakeModal.prototype.show = function (_relatedTarget) {
+    RpureModal.prototype.show = function (_relatedTarget) {
         var that = this;
-        var e = $.Event('show.bs.makemodal', {relatedTarget: _relatedTarget});
+        var e = $.Event('show.bs.rpuremodal', {relatedTarget: _relatedTarget});
 
         this.$element.trigger(e);
 
@@ -38,12 +38,12 @@
         this.isShown = true;
 
         this.checkScrollbar();
-        this.$body.addClass('makemodal-open');
+        this.$body.addClass('rpuremodal-open');
 
         this.setScrollbar();
         this.escape();
 
-        this.$element.on('click.dismiss.bs.makemodal', '[data-dismiss="makemodal"]', $.proxy(this.hide, this));
+        this.$element.on('click.dismiss.bs.rpuremodal', '[data-dismiss="rpuremodal"]', $.proxy(this.hide, this));
 
         this.backdrop(function () {
             var transition = $.support.transition && that.$element.hasClass('fade');
@@ -66,10 +66,10 @@
 
             that.enforceFocus();
 
-            var e = $.Event('shown.bs.makemodal', {relatedTarget: _relatedTarget});
+            var e = $.Event('shown.bs.rpuremodal', {relatedTarget: _relatedTarget});
 
             transition ?
-                that.$element.find('.makemodal-dialog') // wait for makemodal to slide in
+                that.$element.find('.rpuremodal-dialog') // wait for rpuremodal to slide in
                     .one('bsTransitionEnd', function () {
                         that.$element.trigger('focus').trigger(e)
                     })
@@ -78,10 +78,10 @@
         })
     };
 
-    MakeModal.prototype.hide = function (e) {
+    RpureModal.prototype.hide = function (e) {
         if (e) e.preventDefault();
 
-        e = $.Event('hide.bs.makemodal');
+        e = $.Event('hide.bs.rpuremodal');
 
         this.$element.trigger(e);
 
@@ -89,69 +89,69 @@
 
         this.isShown = false;
 
-        this.$body.removeClass('makemodal-open');
+        this.$body.removeClass('rpuremodal-open');
 
         this.resetScrollbar();
         this.escape();
 
-        $(document).off('focusin.bs.makemodal');
+        $(document).off('focusin.bs.rpuremodal');
 
         this.$element
             .removeClass('in')
             .attr('aria-hidden', true)
-            .off('click.dismiss.bs.makemodal');
+            .off('click.dismiss.bs.rpuremodal');
 
         $.support.transition && this.$element.hasClass('fade') ?
             this.$element
-                .one('bsTransitionEnd', $.proxy(this.hideMakeModal, this))
+                .one('bsTransitionEnd', $.proxy(this.hideRpureModal, this))
                 .emulateTransitionEnd(300) :
-            this.hideMakeModal()
+            this.hideRpureModal()
     }
 
-    MakeModal.prototype.enforceFocus = function () {
+    RpureModal.prototype.enforceFocus = function () {
         $(document)
-            .off('focusin.bs.makemodal') // guard against infinite focus loop
-            .on('focusin.bs.makemodal', $.proxy(function (e) {
+            .off('focusin.bs.rpuremodal') // guard against infinite focus loop
+            .on('focusin.bs.rpuremodal', $.proxy(function (e) {
                 if (this.$element[0] !== e.target && !this.$element.has(e.target).length) {
                     this.$element.trigger('focus')
                 }
             }, this))
     }
 
-    MakeModal.prototype.escape = function () {
+    RpureModal.prototype.escape = function () {
         if (this.isShown && this.options.keyboard) {
-            this.$element.on('keyup.dismiss.bs.makemodal', $.proxy(function (e) {
+            this.$element.on('keyup.dismiss.bs.rpuremodal', $.proxy(function (e) {
                 e.which == 27 && this.hide()
             }, this))
         } else if (!this.isShown) {
-            this.$element.off('keyup.dismiss.bs.makemodal')
+            this.$element.off('keyup.dismiss.bs.rpuremodal')
         }
     }
 
-    MakeModal.prototype.hideMakeModal = function () {
+    RpureModal.prototype.hideRpureModal = function () {
         var that = this
         this.$element.hide()
         this.backdrop(function () {
-            that.$element.trigger('hidden.bs.makemodal')
+            that.$element.trigger('hidden.bs.rpuremodal')
         })
     }
 
-    MakeModal.prototype.removeBackdrop = function () {
+    RpureModal.prototype.removeBackdrop = function () {
         this.$backdrop && this.$backdrop.remove();
         this.$backdrop = null
     }
 
-    MakeModal.prototype.backdrop = function (callback) {
+    RpureModal.prototype.backdrop = function (callback) {
         var that = this
         var animate = this.$element.hasClass('fade') ? 'fade' : '';
 
         if (this.isShown && this.options.backdrop) {
             var doAnimate = $.support.transition && animate;
 
-            this.$backdrop = $('<div class="makemodal-backdrop ' + animate + '" />')
+            this.$backdrop = $('<div class="rpuremodal-backdrop ' + animate + '" />')
                 .appendTo(this.$body)
 
-            this.$element.on('click.dismiss.bs.makemodal', $.proxy(function (e) {
+            this.$element.on('click.dismiss.bs.rpuremodal', $.proxy(function (e) {
                 if (e.target !== e.currentTarget) return;
                 this.options.backdrop == 'static'
                     ? this.$element[0].focus.call(this.$element[0])
@@ -188,23 +188,23 @@
         }
     };
 
-    MakeModal.prototype.checkScrollbar = function () {
+    RpureModal.prototype.checkScrollbar = function () {
         if (document.body.clientWidth >= window.innerWidth) return;
         this.scrollbarWidth = this.scrollbarWidth || this.measureScrollbar()
     };
 
-    MakeModal.prototype.setScrollbar = function () {
+    RpureModal.prototype.setScrollbar = function () {
         var bodyPad = parseInt((this.$body.css('padding-right') || 0), 10);
         if (this.scrollbarWidth) this.$body.css('padding-right', bodyPad + this.scrollbarWidth)
     };
 
-    MakeModal.prototype.resetScrollbar = function () {
+    RpureModal.prototype.resetScrollbar = function () {
         this.$body.css('padding-right', '')
     };
 
-    MakeModal.prototype.measureScrollbar = function () {
+    RpureModal.prototype.measureScrollbar = function () {
         var scrollDiv = document.createElement('div');
-        scrollDiv.className = 'makemodal-scrollbar-measure';
+        scrollDiv.className = 'rpuremodal-scrollbar-measure';
         this.$body.append(scrollDiv);
         var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
         this.$body[0].removeChild(scrollDiv);
@@ -214,45 +214,45 @@
     function Plugin(option, _relatedTarget) {
         return this.each(function () {
             var $this = $(this);
-            var data = $this.data('bs.makemodal');
-            var options = $.extend({}, MakeModal.DEFAULTS, $this.data(), typeof option == 'object' && option);
+            var data = $this.data('bs.rpuremodal');
+            var options = $.extend({}, RpureModal.DEFAULTS, $this.data(), typeof option == 'object' && option);
 
-            if (!data) $this.data('bs.makemodal', (data = new MakeModal(this, options)));
+            if (!data) $this.data('bs.rpuremodal', (data = new RpureModal(this, options)));
             if (typeof option == 'string') data[option](_relatedTarget);
             else if (options.show) data.show(_relatedTarget)
         })
     }
 
-    var old = $.fn.makemodal;
+    var old = $.fn.rpuremodal;
 
-    $.fn.makemodal = Plugin;
-    $.fn.makemodal.Constructor = MakeModal;
+    $.fn.rpuremodal = Plugin;
+    $.fn.rpuremodal.Constructor = RpureModal;
 
-    $.fn.makemodal.noConflict = function () {
-        $.fn.makemodal = old;
+    $.fn.rpuremodal.noConflict = function () {
+        $.fn.rpuremodal = old;
         return this
     };
 
-    $(document).on('click.bs.makemodal.data-api', '[data-toggle="makemodal"]', function (e) {
+    $(document).on('click.bs.rpuremodal.data-api', '[data-toggle="rpuremodal"]', function (e) {
         var $this = $(this);
         var href = $this.attr('href');
         var $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))); // strip for ie7
-        var option = $target.data('bs.makemodal') ? 'toggle' : $.extend({remote: !/#/.test(href) && href}, $target.data(), $this.data());
+        var option = $target.data('bs.rpuremodal') ? 'toggle' : $.extend({remote: !/#/.test(href) && href}, $target.data(), $this.data());
 
         if ($this.is('a')) e.preventDefault();
 
-        $target.one('show.bs.makemodal', function (showEvent) {
-            if (showEvent.isDefaultPrevented()) return; // only register focus restorer if makemodal will actually get shown
-            $target.one('hidden.bs.makemodal', function () {
+        $target.one('show.bs.rpuremodal', function (showEvent) {
+            if (showEvent.isDefaultPrevented()) return; // only register focus restorer if rpuremodal will actually get shown
+            $target.one('hidden.bs.rpuremodal', function () {
                 $this.is(':visible') && $this.trigger('focus')
             })
         });
         Plugin.call($target, option, this)
     });
 
-    $(".makemodal-wide").on("show.bs.makemodal", function () {
+    $(".rpuremodal-wide").on("show.bs.rpuremodal", function () {
         var height = $(window).height() - 200;
-        $(this).find(".makemodal-body").css("max-height", height);
+        $(this).find(".rpuremodal-body").css("max-height", height);
     });
 
 }(jQuery);

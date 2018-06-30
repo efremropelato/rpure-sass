@@ -1,4 +1,4 @@
-.make-g {
+.rpure-g {
   letter-spacing: -0.31em;
   *letter-spacing: normal;
   *word-spacing: -0.43em;
@@ -17,16 +17,16 @@
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  table .make-g {
+  table .rpure-g {
     display: block;
   }
 }
 
-.opera-only :-o-prefocus, .make-g {
+.opera-only :-o-prefocus, .rpure-g {
   word-spacing: -0.43em;
 }
 
-.make-u {
+.rpure-u {
   display: inline-block;
   *display: inline;
   zoom: 1;
@@ -36,11 +36,11 @@
   text-rendering: auto;
 }
 
-.make-g [class*="make-u"] {
+.rpure-g [class*="rpure-u"] {
   font-family: sans-serif;
 }
 
-.make-u-1, .make-u-1-1, .make-u-1-2, .make-u-1-3, .make-u-2-3, .make-u-1-4, .make-u-3-4, .make-u-1-5, .make-u-2-5, .make-u-3-5, .make-u-4-5, .make-u-5-5, .make-u-1-6, .make-u-5-6, .make-u-1-8, .make-u-3-8, .make-u-5-8, .make-u-7-8, .make-u-1-12, .make-u-5-12, .make-u-7-12, .make-u-11-12, .make-u-1-24, .make-u-2-24, .make-u-3-24, .make-u-4-24, .make-u-5-24, .make-u-6-24, .make-u-7-24, .make-u-8-24, .make-u-9-24, .make-u-10-24, .make-u-11-24, .make-u-12-24, .make-u-13-24, .make-u-14-24, .make-u-15-24, .make-u-16-24, .make-u-17-24, .make-u-18-24, .make-u-19-24, .make-u-20-24, .make-u-21-24, .make-u-22-24, .make-u-23-24, .make-u-24-24 {
+.rpure-u-1, .rpure-u-1-1, .rpure-u-1-2, .rpure-u-1-3, .rpure-u-2-3, .rpure-u-1-4, .rpure-u-3-4, .rpure-u-1-5, .rpure-u-2-5, .rpure-u-3-5, .rpure-u-4-5, .rpure-u-5-5, .rpure-u-1-6, .rpure-u-5-6, .rpure-u-1-8, .rpure-u-3-8, .rpure-u-5-8, .rpure-u-7-8, .rpure-u-1-12, .rpure-u-5-12, .rpure-u-7-12, .rpure-u-11-12, .rpure-u-1-24, .rpure-u-2-24, .rpure-u-3-24, .rpure-u-4-24, .rpure-u-5-24, .rpure-u-6-24, .rpure-u-7-24, .rpure-u-8-24, .rpure-u-9-24, .rpure-u-10-24, .rpure-u-11-24, .rpure-u-12-24, .rpure-u-13-24, .rpure-u-14-24, .rpure-u-15-24, .rpure-u-16-24, .rpure-u-17-24, .rpure-u-18-24, .rpure-u-19-24, .rpure-u-20-24, .rpure-u-21-24, .rpure-u-22-24, .rpure-u-23-24, .rpure-u-24-24 {
   display: inline-block;
   *display: inline;
   zoom: 1;
@@ -50,141 +50,141 @@
   text-rendering: auto;
 }
 
-.make-u-1-24 {
+.rpure-u-1-24 {
   width: 4.1667%;
   *width: 4.1357%;
 }
 
-.make-u-1-12, .make-u-2-24 {
+.rpure-u-1-12, .rpure-u-2-24 {
   width: 8.3333%;
   *width: 8.3023%;
 }
 
-.make-u-1-8, .make-u-3-24 {
+.rpure-u-1-8, .rpure-u-3-24 {
   width: 12.5000%;
   *width: 12.4690%;
 }
 
-.make-u-1-6, .make-u-4-24 {
+.rpure-u-1-6, .rpure-u-4-24 {
   width: 16.6667%;
   *width: 16.6357%;
 }
 
-.make-u-1-5 {
+.rpure-u-1-5 {
   width: 20%;
   *width: 19.9690%;
 }
 
-.make-u-5-24 {
+.rpure-u-5-24 {
   width: 20.8333%;
   *width: 20.8023%;
 }
 
-.make-u-1-4, .make-u-6-24 {
+.rpure-u-1-4, .rpure-u-6-24 {
   width: 25%;
   *width: 24.9690%;
 }
 
-.make-u-7-24 {
+.rpure-u-7-24 {
   width: 29.1667%;
   *width: 29.1357%;
 }
 
-.make-u-1-3, .make-u-8-24 {
+.rpure-u-1-3, .rpure-u-8-24 {
   width: 33.3333%;
   *width: 33.3023%;
 }
 
-.make-u-3-8, .make-u-9-24 {
+.rpure-u-3-8, .rpure-u-9-24 {
   width: 37.5000%;
   *width: 37.4690%;
 }
 
-.make-u-2-5 {
+.rpure-u-2-5 {
   width: 40%;
   *width: 39.9690%;
 }
 
-.make-u-5-12, .make-u-10-24 {
+.rpure-u-5-12, .rpure-u-10-24 {
   width: 41.6667%;
   *width: 41.6357%;
 }
 
-.make-u-11-24 {
+.rpure-u-11-24 {
   width: 45.8333%;
   *width: 45.8023%;
 }
 
-.make-u-1-2, .make-u-12-24 {
+.rpure-u-1-2, .rpure-u-12-24 {
   width: 50%;
   *width: 49.9690%;
 }
 
-.make-u-13-24 {
+.rpure-u-13-24 {
   width: 54.1667%;
   *width: 54.1357%;
 }
 
-.make-u-7-12, .make-u-14-24 {
+.rpure-u-7-12, .rpure-u-14-24 {
   width: 58.3333%;
   *width: 58.3023%;
 }
 
-.make-u-3-5 {
+.rpure-u-3-5 {
   width: 60%;
   *width: 59.9690%;
 }
 
-.make-u-5-8, .make-u-15-24 {
+.rpure-u-5-8, .rpure-u-15-24 {
   width: 62.5000%;
   *width: 62.4690%;
 }
 
-.make-u-2-3, .make-u-16-24 {
+.rpure-u-2-3, .rpure-u-16-24 {
   width: 66.6667%;
   *width: 66.6357%;
 }
 
-.make-u-17-24 {
+.rpure-u-17-24 {
   width: 70.8333%;
   *width: 70.8023%;
 }
 
-.make-u-3-4, .make-u-18-24 {
+.rpure-u-3-4, .rpure-u-18-24 {
   width: 75%;
   *width: 74.9690%;
 }
 
-.make-u-19-24 {
+.rpure-u-19-24 {
   width: 79.1667%;
   *width: 79.1357%;
 }
 
-.make-u-4-5 {
+.rpure-u-4-5 {
   width: 80%;
   *width: 79.9690%;
 }
 
-.make-u-5-6, .make-u-20-24 {
+.rpure-u-5-6, .rpure-u-20-24 {
   width: 83.3333%;
   *width: 83.3023%;
 }
 
-.make-u-7-8, .make-u-21-24 {
+.rpure-u-7-8, .rpure-u-21-24 {
   width: 87.5000%;
   *width: 87.4690%;
 }
 
-.make-u-11-12, .make-u-22-24 {
+.rpure-u-11-12, .rpure-u-22-24 {
   width: 91.6667%;
   *width: 91.6357%;
 }
 
-.make-u-23-24 {
+.rpure-u-23-24 {
   width: 95.8333%;
   *width: 95.8023%;
 }
 
-.make-u-1, .make-u-1-1, .make-u-5-5, .make-u-24-24 {
+.rpure-u-1, .rpure-u-1-1, .rpure-u-5-5, .rpure-u-24-24 {
   width: 100%;
 }

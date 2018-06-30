@@ -1,4 +1,4 @@
-module Makepure
+module Rpure
   module Sass
     class << self
       def load!
@@ -28,7 +28,7 @@ module Makepure
       end
 
       def register_rails_engine
-        require 'makepure/sass/engine'
+        require 'rpure/sass/engine'
       end
 
       def register_sprockets
@@ -38,4 +38,4 @@ module Makepure
   end
 end
 
-Makepure::Sass.load!
+Rpure::Sass.load!

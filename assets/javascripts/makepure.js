@@ -1,1 +1,0 @@
-//= require ./makepure/modal

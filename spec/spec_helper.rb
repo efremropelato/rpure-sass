@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "makepure-sass"
+require "rpure-sass"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -9,4 +9,3 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
-

@@ -1,4 +1,4 @@
-.make-table {
+.rpure-table {
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
@@ -31,11 +31,11 @@
   }
 }
 
-.make-table-odd td, .make-table-striped tr:nth-child(2n-1) td {
+.rpure-table-odd td, .rpure-table-striped tr:nth-child(2n-1) td {
   background-color: #f2f2f2;
 }
 
-.make-table-bordered {
+.rpure-table-bordered {
   td {
     border-bottom: 1px solid #cbcbcb;
   }
@@ -44,7 +44,7 @@
   }
 }
 
-.make-table-horizontal {
+.rpure-table-horizontal {
   td, th {
     border-width: 0 0 1px 0;
     border-bottom: 1px solid #cbcbcb;

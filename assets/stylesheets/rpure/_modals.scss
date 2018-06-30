@@ -1,8 +1,8 @@
-.makemodal-open {
+.rpuremodal-open {
   overflow: hidden;
 }
 
-.makemodal {
+.rpuremodal {
   display: none;
   overflow: hidden;
   position: fixed;
@@ -13,7 +13,7 @@
   z-index: 1050;
   -webkit-overflow-scrolling: touch;
   outline: 0;
-  &.fade .makemodal-dialog {
+  &.fade .rpuremodal-dialog {
     -webkit-transform: translate(0, -25%);
     -ms-transform: translate(0, -25%);
     -o-transform: translate(0, -25%);
@@ -23,7 +23,7 @@
     -o-transition: -o-transform 0.3s ease-out;
     transition: transform 0.3s ease-out;
   }
-  &.in .makemodal-dialog {
+  &.in .rpuremodal-dialog {
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     -o-transform: translate(0, 0);
@@ -31,18 +31,18 @@
   }
 }
 
-.makemodal-open .makemodal {
+.rpuremodal-open .rpuremodal {
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-.makemodal-dialog {
+.rpuremodal-dialog {
   position: relative;
   width: auto;
   margin: 10px;
 }
 
-.makemodal-content {
+.rpuremodal-content {
   position: relative;
   background-color: white;
   border: 1px solid transparent;
@@ -55,7 +55,7 @@
   outline: 0;
 }
 
-.makemodal-backdrop {
+.rpuremodal-backdrop {
   position: fixed;
   top: 0;
   right: 0;
@@ -75,7 +75,7 @@
   }
 }
 
-.makemodal-header {
+.rpuremodal-header {
   padding: 15px;
   border-bottom: 1px solid white;
   &:before,
@@ -88,21 +88,21 @@
   }
 }
 
-.makemodal-header .close {
+.rpuremodal-header .close {
   margin-top: -2px;
 }
 
-.makemodal-title {
+.rpuremodal-title {
   margin: 0;
   line-height: 1.428571429;
 }
 
-.makemodal-body {
+.rpuremodal-body {
   position: relative;
   padding: 20px;
 }
 
-.makemodal-footer {
+.rpuremodal-footer {
   padding: 20px;
   text-align: right;
   border-top: 1px solid white;
@@ -127,7 +127,7 @@
   }
 }
 
-.makemodal-scrollbar-measure {
+.rpuremodal-scrollbar-measure {
   position: absolute;
   top: -9999px;
   width: 50px;
@@ -136,29 +136,29 @@
 }
 
 @media (min-width: 768px) {
-  .makemodal-dialog {
+  .rpuremodal-dialog {
     width: 600px;
     margin: 30px auto;
   }
-  .makemodal-content {
+  .rpuremodal-content {
     -webkit-box-shadow: (0 5px 15px rgba(0, 0, 0, .5));
     box-shadow: (0 5px 15px rgba(0, 0, 0, .5));
   }
-  .makemodal-sm {
+  .rpuremodal-sm {
     width: 300px;
   }
 }
 
 @media (min-width: 992px) {
-  .makemodal-lg {
+  .rpuremodal-lg {
     width: 900px;
   }
 }
 
-.makemodal .makemodal-wide .makemodal-dialog {
+.rpuremodal .rpuremodal-wide .rpuremodal-dialog {
   width: 70%;
 }
 
-.makemodal-wide .makemodal-body {
+.rpuremodal-wide .rpuremodal-body {
   overflow-y: auto;
 }

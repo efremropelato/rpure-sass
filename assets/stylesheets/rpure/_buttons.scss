@@ -1,4 +1,4 @@
-.make-button {
+.rpure-button {
   display: inline-block;
   zoom: 1;
   line-height: normal;
@@ -18,7 +18,7 @@
   }
 }
 
-.make-button-group {
+.rpure-button-group {
   letter-spacing: -0.31em;
   *letter-spacing: normal;
   *word-spacing: -0.43em;
@@ -29,9 +29,9 @@
   word-spacing: -0.43em;
 }
 
-.make-button-group {
+.rpure-button-group {
   word-spacing: -0.43em;
-  .make-button {
+  .rpure-button {
     letter-spacing: normal;
     word-spacing: normal;
     vertical-align: top;
@@ -39,7 +39,7 @@
   }
 }
 
-.make-button {
+.rpure-button {
   font-family: inherit;
   font-size: 100%;
   padding: 0.5em 1em;
@@ -52,13 +52,13 @@
   border-radius: 2px;
 }
 
-.make-button-hover {
+.rpure-button-hover {
   filter: alpha(opacity=90);
   background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
 }
 
-.make-button {
+.rpure-button {
   &:hover {
     filter: alpha(opacity=90);
     background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
@@ -72,13 +72,13 @@
   }
 }
 
-.make-button-active {
+.rpure-button-active {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
   border-color: #000 \9
 ;
 }
 
-.make-button {
+.rpure-button {
   &:active {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
     border-color: #000 \9
@@ -95,7 +95,7 @@
   }
 }
 
-.make-button-disabled {
+.rpure-button-disabled {
   border: none;
   background-image: none;
   filter: alpha(opacity=40);
@@ -114,23 +114,23 @@
   }
 }
 
-.make-button-hidden {
+.rpure-button-hidden {
   display: none;
 }
 
-.make-button-primary, .make-button-selected {
+.rpure-button-primary, .rpure-button-selected {
   background-color: rgb(0, 120, 231);
   color: #fff;
 }
 
 a {
-  &.make-button-primary, &.make-button-selected {
+  &.rpure-button-primary, &.rpure-button-selected {
     background-color: rgb(0, 120, 231);
     color: #fff;
   }
 }
 
-.make-button-group .make-button {
+.rpure-button-group .rpure-button {
   margin: 0;
   border-radius: 0;
   border-right: 1px solid #111;
@@ -146,43 +146,43 @@ a {
   }
 }
 
-.make-button-success,
-.make-button-error,
-.make-button-warning,
-.make-button-secondary {
+.rpure-button-success,
+.rpure-button-error,
+.rpure-button-warning,
+.rpure-button-secondary {
   color: white;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.make-button-success {
+.rpure-button-success {
   background: rgb(28, 184, 65); /* this is a green */
 }
 
-.make-button-error {
+.rpure-button-error {
   background: rgb(202, 60, 60); /* this is a maroon */
 }
 
-.make-button-warning {
+.rpure-button-warning {
   background: rgb(223, 117, 20); /* this is an orange */
 }
 
-.make-button-secondary {
+.rpure-button-secondary {
   background: rgb(66, 184, 221); /* this is a light blue */
 }
 
-.make-button-xsmall {
+.rpure-button-xsmall {
     font-size: 70%;
 }
 
-.make-button-small {
+.rpure-button-small {
     font-size: 85%;
 }
 
-.make-button-large {
+.rpure-button-large {
     font-size: 110%;
 }
 
-.make-button-xlarge {
+.rpure-button-xlarge {
     font-size: 125%;
 }

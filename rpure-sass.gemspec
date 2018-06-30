@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'makepure/sass/version'
+require 'rpure/sass/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'makepure-sass'
-  spec.version       = Makepure::Sass::VERSION
+  spec.name          = 'rpure-sass'
+  spec.version       = Rpure::Sass::VERSION
   spec.authors       = ['Efrem Ropelato']
   spec.email         = ['efrem.ropelato@gmail.com']
 

@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe 'Sass compilation' do
   it 'compiles scss to css' do
-    path = 'assets/stylesheets'
+    path = '/assets/stylesheets'
     file = 'rpure-sass'
     sass_engine = Sass::Engine.for_file(
                     "#{path}/#{file}.scss",

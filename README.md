@@ -1,8 +1,8 @@
-# Makepure::Sass
+# Rpure::Sass
 
 Sass framework Pure.CSS based and ready to use in Ruby projects.
 
-[Instructions for Use](https://github.com/MakeplanSAS/makepure-sass/wiki)
+[Instructions for Use](https://github.com/efremropelato/rpure-sass/wiki)
 > *TODO: finish to write the instructions for use.*
 
 ## Installation
@@ -10,7 +10,7 @@ Sass framework Pure.CSS based and ready to use in Ruby projects.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'makepure-sass', :git => 'https://github.com/MakeplanSAS/makepure-sass.git'
+gem 'rpure-sass', :git => 'https://github.com/efremropelato/rpure-sass.git'
 ```
 
 

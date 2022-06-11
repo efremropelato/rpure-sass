@@ -15,4 +15,5 @@
 /spec/support/dummy_rails_app/log/
 /spec/support/dummy_rails_app/tmp/
 \.idea/
+
 rpure-sass-*.gem

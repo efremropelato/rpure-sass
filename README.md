@@ -1,5 +1,7 @@
 # Rpure::Sass
 
+Master [![Build Status](https://travis-ci.org/efremropelato/rpure-sass.svg?branch=master)](https://travis-ci.org/efremropelato/rpure-sass) - Develop [![Build Status](https://travis-ci.org/efremropelato/rpure-sass.svg?branch=develop)](https://travis-ci.org/efremropelato/rpure-sass)
+
 Sass framework Pure.CSS based and ready to use in Ruby projects.
 
 [Instructions for Use](https://github.com/efremropelato/rpure-sass/wiki)
